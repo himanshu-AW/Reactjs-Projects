@@ -4,7 +4,7 @@ import { asyncGetProduct } from '../store/actions/ProductAction'
 
 const Products = () => {
     const dispatch  = useDispatch();
-    const {products} = useSelector(state=>state.ProductReducer);
+    const {products} = useSelector( state=>state.ProductReducer );
  
     useEffect(()=>{
         dispatch(asyncGetProduct());
