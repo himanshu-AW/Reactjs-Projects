@@ -34,7 +34,8 @@ const Home = () => {
     <>
       <Sidebar />
       <div className="w-[85%] px-8 py-16 flex flex-wrap gap-6 overflow-x-hidden overfolw-y-auto bg-red-400 ">
-        {filterProduccts && filterProduccts.map((product,index)=>(
+        {
+          filterProduccts && filterProduccts.map((product,index)=>(
           <Link to={`/details/${product.id}`} key={index} className="border-[3px] overflow-hidden hover:scale-105 hover:border-purple-600 bg-purple-200 hover:bg-purple-300 duration-300 shadow-lg bg-gray-200 rounded-md w-56 h-80 flex flex-col justify-center items-center">
           <div className="w-full h-full p-2 bg-purple-100 overflow-hidden">
             <img
