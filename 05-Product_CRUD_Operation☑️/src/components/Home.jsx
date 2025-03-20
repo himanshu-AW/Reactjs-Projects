@@ -9,6 +9,7 @@ import { toast } from 'react-toastify';
 const Home = () => {
   const [products ]= useContext(ProductContext);
   const {search} = useLocation();
+  
   const category = decodeURIComponent(search.split('=')[1]);
 
   const [filterProduccts,setFilterProducts] = useState(null);
